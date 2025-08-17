@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #faf7f2;
+  color: #3e2723;
+}
+.navbar {
+  background-color: #4e342e;
+}
+.navbar a {
+  color: #fbe9e7 !important;
+}
+header {
+  /* background: url('./assets/Logo.png') no-repeat center; */
+  background-size: contain;
+  background-color: #6d4c41;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff3e0;
+  text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.section-title {
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: #4e342e;
+}
+.cardapio-item {
+  border-bottom: 1px dashed #ccc;
+  padding: 8px 0;
+}
+.logo-nav {
+    height: 100px;   /* ajusta a altura da logo */
+    width: auto;    /* mantém proporção */
+  }
+  .navbar-brand {
+    padding: 0;
+    height: 80px;      /* remove espaços extras */
+  }
+/* Títulos */
+.section-title {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: bold;
+    color: #4e342e;
+  }
+  .subsection-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #6d4c41;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Cards de cardápio */
+  .card img {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #6d4c41;
+  }
+  .card-title {
+    color: #4e342e;
+    font-weight: bold;
+  }
+  .card-text {
+    font-size: 0.9rem;
+    color: #5d4037;
+  }
+    
+footer {
+  background-color: #4e342e;
+  color: #fbe9e7;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
