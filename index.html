@@ -27,8 +27,11 @@
                 Cardápio
                 </a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#cardapio">Todos</a></li>
-                <li><a class="dropdown-item" href="#espressos">Espressos</a></li>
+                        <li><a class="dropdown-item" href="#cardapio">Todos</a></li>
+                        <li><a class="dropdown-item" href="#espressos">Espressos</a></li>
+                        <li><a class="dropdown-item" href="#bebidas-geladas">Bebidas Geladas</a></li>
+                        <li><a class="dropdown-item" href="#salgados">Salgados</a></li>
+                        <li><a class="dropdown-item" href="#sobremesas">Sobremesas</a></li>
                 </ul>
             </li>
           <li class="nav-item"><a class="nav-link" href="metodos.html">Métodos</a></li>
@@ -46,80 +49,86 @@
     </div>
   </header>
 
-  <!-- Quem Somos -->
-  <section id="quem-somos" class="container py-5">
-    <h2 class="section-title">Quem Somos</h2>
-    <p class="text-center">
-      A Cafeteria Ignatios nasceu da paixão por cafés especiais e pelo desejo de criar um espaço acolhedor. 
-      Aqui, cada xícara é preparada com cuidado, unindo tradição e inovação. 
-      Nosso ambiente foi pensado para que você se sinta em casa — seja para estudar, trabalhar ou compartilhar bons momentos.
-    </p>
-  </section>
-    <!-- Métodos-->
-<section id="metodos" class="container py-5">
+  <section id="metodos" class="container py-5">
     <h2 class="section-title">Métodos de Preparo</h2>
     <p class="text-center mb-4">
       Cada xícara pode ser única: conheça os diferentes métodos de preparo que realçam aromas e sabores especiais. 
       Aqui estão alguns dos mais utilizados em nossa cafeteria:
     </p>
-    <div class="row text-center">
-      <div class="col-md-3">
-        <img src="assets/metodos/aeropress.webp" alt="Aeropress" class="img-fluid rounded mb-2">
-        <h5>Aeropress</h5>
-        <p>Extração rápida e encorpada.</p>
+  
+    <!-- Carrossel -->
+    <div id="carouselMetodos" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+  
+        <!-- Grupo 1 (4 métodos) -->
+        <div class="carousel-item active">
+          <div class="row text-center">
+            <div class="col-md-3">
+              <img src="assets/metodos/aeropress.jpeg" class="img-fluid rounded mb-2" alt="Aeropress">
+              <h5>Aeropress</h5>
+              <p>Extração rápida.</p>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/metodos/chemex.jpeg" class="img-fluid rounded mb-2" alt="Chemex">
+              <h5>Chemex</h5>
+              <p>Café limpo.</p>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/metodos/v60.jpeg" class="img-fluid rounded mb-2" alt="Hario V60">
+              <h5>Hario V60</h5>
+              <p>Equilibrado.</p>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/metodos/prensa.jpeg" class="img-fluid rounded mb-2" alt="Prensa Francesa">
+              <h5>Prensa Francesa</h5>
+              <p>Intenso.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Grupo 2 (4 métodos) -->
+        <div class="carousel-item">
+          <div class="row text-center">
+            <div class="col-md-3">
+              <img src="assets/metodos/melitta.jpeg" class="img-fluid rounded mb-2" alt="Melitta">
+              <h5>Melitta</h5>
+              <p>Clássico.</p>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/metodos/pressca.jpeg" class="img-fluid rounded mb-2" alt="Pressca">
+              <h5>Pressca</h5>
+              <p>Prático.</p>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/metodos/clever.jpeg" class="img-fluid rounded mb-2" alt="Clever">
+              <h5>Clever</h5>
+              <p>Suave.</p>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/metodos/moka.jpeg" class="img-fluid rounded mb-2" alt="Moka Italiana">
+              <h5>Moka Italiana</h5>
+              <p>Tradicional.</p>
+            </div>
+          </div>
+        </div>
+  
       </div>
-      <div class="col-md-3">
-        <img src="assets/metodos/chemex.webp" alt="Chemex" class="img-fluid rounded mb-2">
-        <h5>Chemex</h5>
-        <p>Café limpo e suave.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="assets/metodos/v60.jpeg" alt="Hario V60" class="img-fluid rounded mb-2">
-        <h5>Hario V60</h5>
-        <p>Equilíbrio perfeito no preparo.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="assets/metodos/prensa.jpeg" alt="Prensa Francesa" class="img-fluid rounded mb-2">
-        <h5>Prensa Francesa</h5>
-        <p>Café intenso e aromático.</p>
-      </div>
+  
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMetodos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMetodos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
+  
+    <!-- Botão -->
     <div class="text-center mt-4">
       <a href="metodos.html" class="btn btn-outline-dark">Ver todos os métodos</a>
     </div>
   </section>
-
-  <!-- Cardápio -->
-  <section id="cardapio" class="container py-5">
-    <h2 class="section-title">Cardápio</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <h4>Cafés e Métodos</h4>
-        <div class="cardapio-item">Affogato</div>
-        <div class="cardapio-item">Americano</div>
-        <div class="cardapio-item">Espresso Simples/Duplo</div>
-        <div class="cardapio-item">Café Bombom</div>
-        <div class="cardapio-item">Café Latte</div>
-        <div class="cardapio-item">Cappuccino Clássico</div>
-        <div class="cardapio-item">Macchiato</div>
-        <div class="cardapio-item">Mocha Latte</div>
-        <div class="cardapio-item">Cold Brew / Orange Brew</div>
-        <div class="cardapio-item">Iced Coffee / Frappés</div>
-      </div>
-      <div class="col-md-6">
-        <h4>Doces e Salgados</h4>
-        <div class="cardapio-item">Misto Quente</div>
-        <div class="cardapio-item">Pão de Queijo</div>
-        <div class="cardapio-item">Torrada / Queijo Quente</div>
-        <div class="cardapio-item">Brownie Tradicional / com Sorvete</div>
-        <div class="cardapio-item">Cookie Tradicional / Macadâmia</div>
-        <div class="cardapio-item">Bolo de Cenoura</div>
-        <div class="cardapio-item">Grand Gateau</div>
-        <div class="cardapio-item">Profiteroles</div>
-        <div class="cardapio-item">Pudim</div>
-        <div class="cardapio-item">Waffle com Nutella e Sorvete</div>
-      </div>
-    </div>
+  
   </section>
   <!-- Cardápio Geral -->
 <section id="cardapio" class="container py-5">
@@ -143,7 +152,7 @@
         <!-- Americano -->
         <div class="col-md-4 mb-4">
           <div class="card h-100 shadow-sm">
-            <img src="assets/cardapio/espressos/americano.jpg" class="card-img-top" alt="Americano">
+            <img src="assets/cardapio/expressos/americano.jpeg" class="card-img-top" alt="Americano">
             <div class="card-body text-center">
               <h5 class="card-title">2 - Americano</h5>
               <p class="card-text">(Espresso diluído)</p>
@@ -170,23 +179,13 @@
             </div>
           </div>
         </div>
-  
-        <!-- Café Bombom -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/cardapio/espressos/cafe-bombom.jpg" class="card-img-top" alt="Café Bombom">
-            <div class="card-body text-center">
-              <h5 class="card-title">5 - Café Bombom</h5>
-            </div>
-          </div>
-        </div>
-  
+
         <!-- Café Latte -->
         <div class="col-md-4 mb-4">
           <div class="card h-100 shadow-sm">
             <img src="assets/cardapio/expressos/cafelatte.jpeg" class="card-img-top" alt="Café Latte">
             <div class="card-body text-center">
-              <h5 class="card-title">6 - Café Latte</h5>
+              <h5 class="card-title">5 - Café Latte</h5>
             </div>
           </div>
         </div>
@@ -194,9 +193,9 @@
         <!-- Cappuccino -->
         <div class="col-md-4 mb-4">
           <div class="card h-100 shadow-sm">
-            <img src="assets/cardapio/expressos/" class="card-img-top" alt="Cappuccino Clássico">
+            <img src="assets/cardapio/expressos/capuccino.jpeg" class="card-img-top" alt="Cappuccino Clássico">
             <div class="card-body text-center">
-              <h5 class="card-title">7 - Cappuccino Clássico</h5>
+              <h5 class="card-title">6 - Cappuccino Clássico</h5>
             </div>
           </div>
         </div>
@@ -206,7 +205,7 @@
           <div class="card h-100 shadow-sm">
             <img src="assets/cardapio/expressos/macchiato.jpeg" class="card-img-top" alt="Macchiato">
             <div class="card-body text-center">
-              <h5 class="card-title">8 - Macchiato</h5>
+              <h5 class="card-title">7 - Macchiato</h5>
             </div>
           </div>
         </div>
@@ -216,10 +215,294 @@
           <div class="card h-100 shadow-sm">
             <img src="assets/cardapio/expressos/mochalatte.jpeg" class="card-img-top" alt="Mocha Latte">
             <div class="card-body text-center">
-              <h5 class="card-title">9 - Mocha Latte</h5>
+              <h5 class="card-title">8 - Mocha Latte</h5>
             </div>
           </div>
         </div>
+        <!-- Mini-seção: Bebidas Geladas -->
+<div id="bebidas-geladas" class="mt-5">
+    <h3 class="subsection-title">Bebidas Geladas</h3>
+    <div class="row">
+  
+      <!-- Cold Brew -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/bebidas-geladas/cold brew.jpeg" class="card-img-top" alt="Cold Brew">
+          <div class="card-body text-center">
+            <h5 class="card-title">9 - Cold Brew</h5>
+            <p class="card-text">Extraído a frio, refrescante e suave.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Coconut Brew -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/bebidas-geladas/coconut-brew.jpg" class="card-img-top" alt="Coconut Brew">
+          <div class="card-body text-center">
+            <h5 class="card-title">10 - Coconut Brew</h5>
+            <p class="card-text">Café gelado com toque de coco.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Orange Brew -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/bebidas-geladas/orange-brew.jpg" class="card-img-top" alt="Orange Brew">
+          <div class="card-body text-center">
+            <h5 class="card-title">11 - Orange Brew</h5>
+            <p class="card-text">Refrescante com laranja.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Siciliano Brew -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/bebidas-geladas/brew-siciliano.jpeg" class="card-img-top" alt="Siciliano Brew">
+          <div class="card-body text-center">
+            <h5 class="card-title">12 - Siciliano Brew</h5>
+            <p class="card-text">Café gelado com limão siciliano.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Iced Coffee -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/bebidas-geladas/frape-nescau.jpeg" class="card-img-top" alt="Iced Coffee">
+          <div class="card-body text-center">
+            <h5 class="card-title">13 - Iced Coffee</h5>
+            <p class="card-text">Clássico café gelado.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Frappé Latte -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/bebidas-geladas/frapelatte.jpeg" class="card-img-top" alt="Frappé Latte">
+          <div class="card-body text-center">
+            <h5 class="card-title">14 - Frappé Latte</h5>
+            <p class="card-text">Café gelado cremoso.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Frappé Variados -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/bebidas-geladas/frape.jpeg" class="card-img-top" alt="Frappé Vários Sabores">
+          <div class="card-body text-center">
+            <h5 class="card-title">15 - Frappé Oreo</h5>
+            <p class="card-text">(Nescau, Nutella, Oreo ou Ovomaltine)</p>
+          </div>
+        </div>
+      </div>
+            <!-- Frape Nescau -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/bebidas-geladas/frape-nescau.jpeg" class="card-img-top" alt="Iced Coffee">
+          <div class="card-body text-center">
+            <h5 class="card-title">15 - Frappé Nescau</h5>
+            <p class="card-text">(Nescau, Nutella, Oreo ou Ovomaltine)</p>
+          </div>
+        </div>
+      </div>
+<!-- Mini-seção: Salgados -->
+<div id="salgados" class="mt-5">
+    <h3 class="subsection-title">Salgados</h3>
+    <div class="row">
+  
+      <!-- Misto Quente -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/salgados/misto-quente.jpg" class="card-img-top" alt="Misto Quente">
+          <div class="card-body text-center">
+            <h5 class="card-title">16 - Misto Quente</h5>
+            <p class="card-text">Clássico pão com presunto e queijo.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Pão de Queijo -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/salgados/pao-de-queijo.jpeg" class="card-img-top" alt="Pão de Queijo">
+          <div class="card-body text-center">
+            <h5 class="card-title">17 - Pão de Queijo</h5>
+            <p class="card-text">Tradicional mineiro, quentinho e crocante.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Queijo Quente -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/salgados/queijo-quente.jpg" class="card-img-top" alt="Queijo Quente">
+          <div class="card-body text-center">
+            <h5 class="card-title">18 - Queijo Quente</h5>
+            <p class="card-text">Sanduíche tostado com muito queijo.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Torrada -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/salgados/torrada.jpg" class="card-img-top" alt="Torrada">
+          <div class="card-body text-center">
+            <h5 class="card-title">19 - Torrada</h5>
+            <p class="card-text">Croque dourado, perfeito para acompanhar café.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Waffle com cream cheese e presunto -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/salgados/waffle-salgado.jpg" class="card-img-top" alt="Waffle Salgado">
+          <div class="card-body text-center">
+            <h5 class="card-title">20 - Waffle Salgado</h5>
+            <p class="card-text">Com cream cheese, presunto e queijo gratinado.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+    <!-- Mini-seção: Sobremesas -->
+<div id="sobremesas" class="mt-5">
+    <h3 class="subsection-title">Sobremesas</h3>
+    <div class="row">
+  
+      <!-- Bolo de Cenoura -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/bolo-de-cenoura.jpeg" class="card-img-top" alt="Bolo de Cenoura">
+          <div class="card-body text-center">
+            <h5 class="card-title">21 - Bolo de Cenoura</h5>
+            <p class="card-text">(com cobertura opcional)</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Brownie Tradicional -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/brownie.jpg" class="card-img-top" alt="Brownie Tradicional">
+          <div class="card-body text-center">
+            <h5 class="card-title">22 - Brownie Tradicional</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Brownie com Sorvete -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/brownie-sorvete.jpg" class="card-img-top" alt="Brownie com Sorvete">
+          <div class="card-body text-center">
+            <h5 class="card-title">23 - Brownie c/ Sorvete</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Café Bombom -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/cafe-bombom.jpg" class="card-img-top" alt="Café Bombom">
+          <div class="card-body text-center">
+            <h5 class="card-title">24 - Café Bombom</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Chocolate Quente -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/chocolate-quente.jpg" class="card-img-top" alt="Chocolate Quente">
+          <div class="card-body text-center">
+            <h5 class="card-title">25 - Chocolate Quente</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Cookie Tradicional -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/cookie-tradicional.jpg" class="card-img-top" alt="Cookie Tradicional">
+          <div class="card-body text-center">
+            <h5 class="card-title">26 - Cookie Tradicional</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Cookie Chocolate Macadâmia -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/cookie-macadamia.jpg" class="card-img-top" alt="Cookie Chocolate Macadâmia">
+          <div class="card-body text-center">
+            <h5 class="card-title">27 - Cookie c/ Chocolate e Macadâmia</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Grand Gateau -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/grand-gateau.jpg" class="card-img-top" alt="Grand Gateau">
+          <div class="card-body text-center">
+            <h5 class="card-title">28 - Grand Gateau</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Profiteroles -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/profiteroles.jpg" class="card-img-top" alt="Profiteroles">
+          <div class="card-body text-center">
+            <h5 class="card-title">29 - Profiteroles</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Pudim -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/pudim.jpg" class="card-img-top" alt="Pudim">
+          <div class="card-body text-center">
+            <h5 class="card-title">30 - Pudim</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Sorvete -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/sorvete.jpg" class="card-img-top" alt="Sorvete com pedaços de chocolate">
+          <div class="card-body text-center">
+            <h5 class="card-title">31 - Sorvete c/ pedaços de chocolate</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Waffle de Nutella -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/cardapio/sobremesas/waffle-nutella.jpg" class="card-img-top" alt="Waffle de Nutella c/ sorvete">
+          <div class="card-body text-center">
+            <h5 class="card-title">32 - Waffle de Nutella c/ sorvete</h5>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+    </div>
+  </div>
   
       </div>
     </div>

@@ -42,6 +42,19 @@ header h1 {
     padding: 0;
     height: 80px;      /* remove espaços extras */
   }
+  /* Estilo do dropdown */
+.navbar .dropdown-menu {
+    background-color: #4e342e;
+    border: none;
+  }
+  .navbar .dropdown-item {
+    color: #fbe9e7;
+  }
+  .navbar .dropdown-item:hover {
+    background-color: #6d4c41;
+    color: #fff3e0;
+  }
+  
 /* Títulos */
 .section-title {
     text-align: center;
@@ -70,6 +83,94 @@ header h1 {
     font-size: 0.9rem;
     color: #5d4037;
   }
+/* Métodos - imagens maiores */
+#metodos img {
+    height: 280px;       /* Aumenta a altura (pode ser 300px se quiser ainda maior) */
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #6d4c41;
+  }
+  
+  /* Centralizar e destacar título/descrição */
+  #metodos h5 {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #4e342e;
+    font-size: 1.2rem;
+  }
+  #metodos p {
+    font-size: 1rem;
+    color: #5d4037;
+  }
+  
+  /* Setas do carrossel fora da foto */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;                 /* ocupa só a lateral */
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #4e342e; /* cor marrom */
+    border-radius: 50%;
+    padding: 18px;             /* tamanho maior da bolinha */
+  }
+
+  #metodos img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  }  
+ /* Fotos só dos cards da seção Espressos */
+#espressos .card-img-top {
+  height: 350px;        /* aumenta altura da foto */
+  object-fit: cover;    /* mantém proporção cortando excesso */
+  border-radius: 8px 8px 0 0; /* cantos arredondados só em cima */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+/* Efeito hover com zoom */
+#espressos .card-img-top:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+#bebidas-geladas .card-img-top {
+    height: 350px;         /* mais alto */
+    object-fit: cover;     /* cobre mantendo proporção */
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+  
+  #bebidas-geladas .col-md-4 {
+    flex: 0 0 25%;   /* muda de 3 cards por linha (col-md-4) para 4 cards por linha */
+    max-width: 25%;
+  }
+/* Fotos só da seção Salgados */
+#salgados .card-img-top {
+    height: 250px;          /* Ajusta para suas fotos */
+    object-fit: cover;      /* Garante preenchimento */
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+  #salgados .card-img-top:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  }
+/* Fotos só da seção Sobremesas */
+#sobremesas .card-img-top {
+    height: 250px;          /* ajuste de acordo com as suas fotos */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+  #sobremesas .card-img-top:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  }
+      
     
 footer {
   background-color: #4e342e;
