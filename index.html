@@ -40,13 +40,14 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header id="inicio">
-    <div>
-      <h1>Cafeteria Ignatios</h1>
-      <p>Onde o café encontra aconchego</p>
+<!-- Header -->
+<header id="inicio">
+    <div class="overlay">
+      <img src="assets/Logo.png" alt="Logo Cafeteria Ignatios" class="logo-header">
     </div>
   </header>
+  
+  
 
   <section id="metodos" class="container py-5">
     <h2 class="section-title">Métodos de Preparo</h2>
@@ -55,78 +56,77 @@
       Aqui estão alguns dos mais utilizados em nossa cafeteria:
     </p>
   
-    <!-- Carrossel -->
-    <div id="carouselMetodos" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-  
-        <!-- Grupo 1 (4 métodos) -->
-        <div class="carousel-item active">
-          <div class="row text-center">
-            <div class="col-md-3">
-              <img src="assets/metodos/aeropress.jpeg" class="img-fluid rounded mb-2" alt="Aeropress">
-              <h5>Aeropress</h5>
-              <p>Extração rápida.</p>
-            </div>
-            <div class="col-md-3">
-              <img src="assets/metodos/chemex.jpeg" class="img-fluid rounded mb-2" alt="Chemex">
-              <h5>Chemex</h5>
-              <p>Café limpo.</p>
-            </div>
-            <div class="col-md-3">
-              <img src="assets/metodos/v60.jpeg" class="img-fluid rounded mb-2" alt="Hario V60">
-              <h5>Hario V60</h5>
-              <p>Equilibrado.</p>
-            </div>
-            <div class="col-md-3">
-              <img src="assets/metodos/prensa.jpeg" class="img-fluid rounded mb-2" alt="Prensa Francesa">
-              <h5>Prensa Francesa</h5>
-              <p>Intenso.</p>
-            </div>
+<!-- Carrossel -->
+<div id="carouselMetodos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Todos os métodos em 1 grupo -->
+      <div class="carousel-item active">
+        <div class="row text-center flex-nowrap overflow-auto">
+          
+          <div class="col-md-3">
+            <img src="assets/metodos/aeropress.jpeg" class="img-fluid rounded mb-2" alt="Aeropress">
+            <h5>Aeropress</h5>
+            <p>Extração rápida.</p>
           </div>
-        </div>
   
-        <!-- Grupo 2 (4 métodos) -->
-        <div class="carousel-item">
-          <div class="row text-center">
-            <div class="col-md-3">
-              <img src="assets/metodos/melitta.jpeg" class="img-fluid rounded mb-2" alt="Melitta">
-              <h5>Melitta</h5>
-              <p>Clássico.</p>
-            </div>
-            <div class="col-md-3">
-              <img src="assets/metodos/pressca.jpeg" class="img-fluid rounded mb-2" alt="Pressca">
-              <h5>Pressca</h5>
-              <p>Prático.</p>
-            </div>
-            <div class="col-md-3">
-              <img src="assets/metodos/clever.jpeg" class="img-fluid rounded mb-2" alt="Clever">
-              <h5>Clever</h5>
-              <p>Suave.</p>
-            </div>
-            <div class="col-md-3">
-              <img src="assets/metodos/moka.jpeg" class="img-fluid rounded mb-2" alt="Moka Italiana">
-              <h5>Moka Italiana</h5>
-              <p>Tradicional.</p>
-            </div>
+          <div class="col-md-3">
+            <img src="assets/metodos/chemex.jpeg" class="img-fluid rounded mb-2" alt="Chemex">
+            <h5>Chemex</h5>
+            <p>Café limpo.</p>
           </div>
-        </div>
   
+          <div class="col-md-3">
+            <img src="assets/metodos/clever.jpeg" class="img-fluid rounded mb-2" alt="Clever">
+            <h5>Clever</h5>
+            <p>Suave.</p>
+          </div>
+  
+          <div class="col-md-3">
+            <img src="assets/metodos/hario-mizudashi.webp" class="img-fluid rounded mb-2" alt="Hario Mizudashi">
+            <h5>Hario Mizudashi Cold Brewer</h5>
+            <p>Extração a frio.</p>
+          </div>
+  
+          <div class="col-md-3">
+            <img src="assets/metodos/v60.jpeg" class="img-fluid rounded mb-2" alt="Hario V60">
+            <h5>Hario V60</h5>
+            <p>Equilibrado.</p>
+          </div>
+  
+          <div class="col-md-3">
+            <img src="assets/metodos/melitta.jpeg" class="img-fluid rounded mb-2" alt="Melitta">
+            <h5>Melitta</h5>
+            <p>Clássico.</p>
+          </div>
+  
+          <div class="col-md-3">
+            <img src="assets/metodos/moka.jpeg" class="img-fluid rounded mb-2" alt="Moka Italiana">
+            <h5>Moka Italiana</h5>
+            <p>Tradicional.</p>
+          </div>
+  
+          <div class="col-md-3">
+            <img src="assets/metodos/prensa.jpeg" class="img-fluid rounded mb-2" alt="Prensa Francesa">
+            <h5>Prensa Francesa</h5>
+            <p>Intenso.</p>
+          </div>
+  
+          <div class="col-md-3">
+            <img src="assets/metodos/pressca.jpeg" class="img-fluid rounded mb-2" alt="Pressca">
+            <h5>Pressca</h5>
+            <p>Prático.</p>
+          </div>
+  
+        </div>
       </div>
-  
-      <!-- Controles -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMetodos" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselMetodos" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
+  </div>
   
-    <!-- Botão -->
-    <div class="text-center mt-4">
-      <a href="metodos.html" class="btn btn-outline-dark">Ver todos os métodos</a>
-    </div>
-  </section>
+  <!-- Botão -->
+  <div class="text-center mt-4">
+    <a href="metodos.html" class="btn btn-outline-dark">Ver todos os métodos</a>
+  </div>
+  
   
   </section>
   <!-- Cardápio Geral -->
@@ -430,7 +430,7 @@
       <!-- Cookie Tradicional -->
       <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
-          <img src="assets/cardapio/sobremesas/cookie-tradicional.jpg" class="card-img-top" alt="Cookie Tradicional">
+          <img src="assets/cardapio/sobremesas/cookie.jpeg" class="card-img-top" alt="Cookie Tradicional">
           <div class="card-body text-center">
             <h5 class="card-title">26 - Cookie Tradicional</h5>
           </div>
