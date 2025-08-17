@@ -1,0 +1,90 @@
+body { 
+    background-color: #faf7f2; 
+    color: #3e2723; 
+    font-family: 'Segoe UI', sans-serif; 
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar { background-color: #4e342e; }
+  .navbar a { color: #fbe9e7 !important; }
+  
+  .logo-nav {
+    height: 40px;
+    width: auto;
+  }
+  
+  /* Título da página */
+  .section-title { 
+    text-align: center; 
+    margin: 3rem 0 4rem; 
+    font-weight: bold; 
+    font-size: 2.2rem;
+    color: #4e342e; 
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #d7ccc8;
+    margin: 0.8rem auto 0;
+    border-radius: 2px;
+  }
+  
+  /* Cada método */
+  .metodo { 
+    margin-bottom: 4rem; 
+    align-items: center;
+  }
+  
+  .metodo .col-md-6 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Card visual para imagem + descrição */
+  .metodo img {
+    border-radius: 12px;
+    width: auto;      /* mantém proporção */
+    height: 420px;    /* deixa o card alto */
+    margin: 0 auto;   /* centraliza */
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  
+  
+  .metodo img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  }
+  
+  /* Títulos dos métodos */
+  .metodo h3 { 
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #4e342e;
+  }
+  
+  /* Texto */
+  .metodo p { 
+    font-size: 1.05rem;
+    color: #5d4037;
+  }
+  
+  /* Footer */
+  footer { 
+    background-color: #4e342e; 
+    color: #fbe9e7; 
+    text-align: center; 
+    padding: 1.5rem 0; 
+    margin-top: 3rem; 
+  }
+  
