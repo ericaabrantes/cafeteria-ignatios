@@ -13,7 +13,11 @@ body {
     height: 40px;
     width: auto;
   }
-  
+  header .logo-header {
+    width: 500px; /* tamanho maior da logo */
+    margin-bottom: 5px;
+    margin-top: 50px;
+  }
   /* Título da página */
   .section-title { 
     text-align: center; 
