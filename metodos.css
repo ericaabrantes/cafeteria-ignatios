@@ -91,4 +91,26 @@ body {
     padding: 1.5rem 0; 
     margin-top: 3rem; 
   }
+/* Ajuste de espaçamento no mobile */
+@media (max-width: 768px) {
+    .metodo {
+      text-align: center; /* centraliza tudo */
+    }
+  
+    .metodo img {
+      height: auto;        /* deixa a imagem adaptar ao mobile */
+      max-height: 320px;   /* limite para não estourar */
+      margin-bottom: 1rem; /* espaço entre imagem e título */
+    }
+  
+    .metodo h3 {
+      margin-top: 0.8rem;  /* espaço do título para baixo da imagem */
+      font-size: 1.4rem;
+    }
+  
+    .metodo p {
+      font-size: 1rem;
+      padding: 0 1rem;     /* respiro lateral no texto */
+    }
+  }
   
