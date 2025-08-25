@@ -170,10 +170,26 @@ header {
     cursor: pointer;
   }
   
-  #bebidas-geladas .col-md-4 {
-    flex: 0 0 25%;   /* muda de 3 cards por linha (col-md-4) para 4 cards por linha */
-    max-width: 25%;
+/* Bebidas Geladas */
+#bebidas-geladas .col-md-4 {
+    flex: 0 0 100%;     /* mobile: 1 card por linha */
+    max-width: 100%;
   }
+  
+  @media (min-width: 768px) {
+    #bebidas-geladas .col-md-4 {
+      flex: 0 0 50%;    /* tablets: 2 por linha */
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #bebidas-geladas .col-md-4 {
+      flex: 0 0 25%;    /* desktops: 4 por linha */
+      max-width: 25%;
+    }
+  }
+  
 /* Fotos só da seção Salgados */
 #salgados .card-img-top {
     height: 250px;          /* Ajusta para suas fotos */
