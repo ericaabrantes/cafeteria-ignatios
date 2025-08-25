@@ -9,9 +9,9 @@ body {
   .navbar { background-color: #4e342e; }
   .navbar a { color: #fbe9e7 !important; }
   
-  .logo-nav {
-    height: 40px;
-    width: auto;
+.logo-nav {
+    height: 100px;   /* ajusta a altura da logo */
+    width: auto;    /* mantém proporção */
   }
   header .logo-header {
     width: 500px; /* tamanho maior da logo */
